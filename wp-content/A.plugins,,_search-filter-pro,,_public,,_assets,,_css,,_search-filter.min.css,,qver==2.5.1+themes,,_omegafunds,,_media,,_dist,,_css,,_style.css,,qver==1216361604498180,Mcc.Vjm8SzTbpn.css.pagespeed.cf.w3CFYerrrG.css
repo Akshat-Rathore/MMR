@@ -6477,8 +6477,8 @@ section.text-overlay-media.viewed .media:before {
   }
   header.primary .inline-pane a.logo {
       align-items: center;
-      flex-basis: 330px;
-      width: 330px
+      flex-basis: 200px;
+      width: 200px
   }
   header.primary .inline-pane a.logo svg {
       width: 229px;
@@ -7510,7 +7510,7 @@ section.text-overlay-media.viewed .media:before {
   }
 }
 
-@media screen and (min-width:1280px) {
+@media screen and (min-width:1340px) {
   article.employee-listed .name {
       font-size: 20px;
       font-size: inherit
@@ -7724,7 +7724,7 @@ section.text-overlay-media.viewed .media:before {
   }
 }
 
-@media only screen and (min-width:1280px) {
+@media only screen and (min-width:1340px) {
   header.primary .inline-pane .menu {
       display: inline-flex
   }

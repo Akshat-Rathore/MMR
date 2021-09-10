@@ -152,7 +152,68 @@
 </head>
 
 <body id="top" class="page-template page-template-templates page-template-template_team page-template-templatestemplate_team-php page page-id-13">
+    <style>
+       .close-container {
+  position: relative;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  margin-top: 100px;
+  cursor: pointer;
+}
 
+.leftright {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #000;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+
+.rightleft {
+  height: 4px;
+  width: 50px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #000;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+
+label {
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+
+.close {
+  margin: 60px 0 0 5px;
+  position: absolute;
+}
+
+.close-container:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #F25C66;
+}
+
+.close-container:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #F25C66;
+}
+
+.close-container:hover label {
+  opacity: 1;
+}
+
+    </style>
 	<!-- Body tracking code(s) -->
 	
 	<!--
@@ -968,13 +1029,68 @@
     </footer>
     <div id="animatedModal">
         <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
-        <div class="close-animatedModal"> 
-            CLOSE MODAL
-        </div>
+        
             
         <div class="modal-content">
+            <div class="close-animatedModal"> 
+                <div class="close-container">
+                    <div class="leftright"></div>
+                    <div class="rightleft"></div>
+                    <label class="close" style="color: #000 !important;">close</label>
+                  </div>
+            </div>
                   <!--Your modal content goes here-->
-                  Yo
+                  <section class="heading view-detect -has-description ">
+                    <div class="container">
+                        <div class="container_inner">
+                
+                            <!-- Title -->
+                            <aside class="heading">
+                                <h3><p style="text-align: center;"><b>C. BHARANI KUMAR</b> </p></h3>
+                                <!-- <a data-cursor="2" data-cursor-label="" data-cursor-color="#fff" data-cursor-bg="#C22B2F" class="photo"  title="Go to profile page for Dina Chaya" > -->
+                                    <div class="" style="display: block; margin: auto; text-align: center; padding: 20px;">
+                                    <img src="../exec-directors/c.bharanikumar.jpg" height="230" width="230">
+                                    </div>
+                                    <div style="font-size: large !important;  letter-spacing: 1px;"> <p>
+                                        Director <strong>JC Groups</strong>
+                                        <br>
+                                        <div style="padding:2px;"></div>
+                                        Managing Director <strong>JC Industries (P) Ltd.</strong>
+                                    </p>
+                                    </div>
+                                <!-- </a> -->
+                        
+                            </aside>
+                
+                            <!-- Description -->
+                            
+                                <aside class="description">
+                                    <div class="section-label heading">
+                                        <span style="text-transform: uppercase;"><h4 style="font-weight: bold !important;"><strong>experience</strong></h4><br></span>
+                                     </div>
+                                    <p> 
+                                        <ul>
+                                            <li>12 years in Metal, Battery and Plastic Industry </li>
+                                            <li>5 years as a Software Engineer in USA</li>
+                                        </ul>
+                                    </p>
+                                    <div class="section-label heading">
+                                        <span style="text-transform: uppercase;"><h4 style="font-weight: bold !important;"><strong>Qualification</strong></h4><br></span>
+                                     </div>
+                                    <p>
+                                        BE Degree from KCT, India<br>
+                                    MS- Applied Mathematics from MSU, USA </p>
+                                     
+                                 </aside>
+                                 
+                
+                
+                            
+                        </div>
+                        
+                    </div>
+                </section>
+                  
         </div>
     </div>
 
@@ -987,7 +1103,24 @@ var superpwa_sw = {"url":"\/superpwa-sw.js"};
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../assets/js/animated.modal.min.js"></script>
 <script>
-      $("#demo01").animatedModal();
+      $("#demo01").animatedModal({
+                animatedIn:'lightSpeedIn',
+                animatedOut:'bounceOut',
+                color:'#e4e4e4',
+                // Callbacks
+                beforeOpen: function() {
+                    console.log("The animation was called");
+                },           
+                afterOpen: function() {
+                    console.log("The animation is completed");
+                }, 
+                beforeClose: function() {
+                    console.log("The animation was called");
+                }, 
+                afterClose: function() {
+                    console.log("The animation is completed");
+                }
+            });
 </script>
 <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="../assets/js/animated.modal.min.js"></script> -->

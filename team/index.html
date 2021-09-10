@@ -91,7 +91,7 @@
 
 	<!-- Pingback -->
     <link rel="pingback" href="https://omegafunds.impression.studio/xmlrpc.php">
-
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <!-- Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="#C22B2F">
@@ -662,7 +662,7 @@
     <div class="article_inner">
 
         <!-- Photo -->
-        <a data-cursor="2" data-cursor-label="View" data-cursor-color="#fff" data-cursor-bg="#C22B2F" class="photo" href="" title="Go to profile page for Dina Chaya" target="_self">
+        <a id="demo01" href="#animatedModal" data-cursor="2" data-cursor-label="View" data-cursor-color="#fff" data-cursor-bg="#C22B2F" class="photo"  title="Go to profile page for Dina Chaya" >
             <div class="photo_src lozad" data-background-image-set="url('../exec-directors/c.bharanikumar.jpg') 1x"></div>
         </a>
 
@@ -966,6 +966,17 @@
         </section>
     
     </footer>
+    <div id="animatedModal">
+        <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+        <div class="close-animatedModal"> 
+            CLOSE MODAL
+        </div>
+            
+        <div class="modal-content">
+                  <!--Your modal content goes here-->
+                  Yo
+        </div>
+    </div>
 
     <!-- WP Foot -->
     <script type="text/javascript" id="superpwa-register-sw-js-extra">
@@ -973,6 +984,13 @@
 var superpwa_sw = {"url":"\/superpwa-sw.js"};
 /* ]]> */
 </script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../assets/js/animated.modal.min.js"></script>
+<script>
+      $("#demo01").animatedModal();
+</script>
+<!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="../assets/js/animated.modal.min.js"></script> -->
 <script type="text/javascript" src="../wp-content/plugins/super-progressive-web-apps/public/js/register-sw.js" id="superpwa-register-sw-js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/combine/npm/greensock@1.20.2,npm/scrollmagic@2.0.7/scrollmagic/minified/ScrollMagic.min.js,npm/scrollmagic@2.0.7/scrollmagic/minified/plugins/animation.gsap.min.js,npm/is-in-viewport@3.0.4,npm/lozad@1.16.0,npm/flickity@2.2.1/dist/flickity.pkgd.min.js,npm/paroller.js@1.4.0?ver=5.5.5" id="bundled-script-js"></script>
 <script type="text/javascript" src="../wp-content/themes/omegafunds/media/dist/js/global.min_ver%3D160751604498182.js" id="global-script-js"></script>

@@ -2946,7 +2946,7 @@ header.primary .inline-pane .menu a {
   line-height: 21px;
   line-height: 1.3125rem;
   overflow: visible;
-  /* padding: 10px 20px; */
+  padding: 10px 20px;
   position: relative;
   text-decoration: none;
   transition: color .15s cubic-bezier(.645, .045, .355, 1)
